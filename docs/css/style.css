@@ -1,18 +1,16 @@
-game * {
-    position: absolute;
-    display: block;
-    margin: 0; padding: 0;
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-ball {
-    background-image: url("../images/basketball.png");
-    width: 100px; height: 100px;
+input {
+    display: block;
+    margin: 20px auto;
+    width: 10%;
+    border: 1px solid blue;
+    font-size: 1em;
 }
-cat {
-    background-image: url("../images/neon_cat.png");
-    width: 592px; height: 139px;
-}
-car {
-    background-image: url("../images/car.png");
-    width: 145px; height: 45px;
+
+header {
+    margin: 20px auto;
+    width: 60%;
 }

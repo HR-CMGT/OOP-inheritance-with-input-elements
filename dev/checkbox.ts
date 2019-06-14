@@ -9,7 +9,11 @@ class CheckBox extends InputField {
         console.log("Checkbox created")   
     }
 
-    public isEmpty() : boolean {
+    /**
+     * This function OVERRIDES the default behavior. 
+     * A 'empty' check for a checkbox is diffrent.
+     */
+    protected isEmpty() : boolean {
         return (!this.input.checked)
     }
 }

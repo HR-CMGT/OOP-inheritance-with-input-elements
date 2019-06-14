@@ -1,8 +1,3 @@
-//             InputField (parent)
-//                 type
-//             CheckBox (child)
-// let c : CheckBox = new CheckBox()
-// let i : InputField = new InputField("checkbox")
 class InputField {
     constructor(type) {
         this.input = document.createElement("input");
@@ -15,6 +10,9 @@ class InputField {
             console.log("This is a required field!!!");
         }
     }
+    /**
+     * Default check (text field, numeric field)
+     */
     isEmpty() {
         return (this.input.value == "");
     }
@@ -25,6 +23,10 @@ class CheckBox extends InputField {
         super("checkbox");
         console.log("Checkbox created");
     }
+    /**
+     * This function OVERRIDES the default behavior.
+     * A 'empty' check for a checkbox is diffrent.
+     */
     isEmpty() {
         return (!this.input.checked);
     }

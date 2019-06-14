@@ -21,7 +21,10 @@ class InputField {
             console.log("This is a required field!!!")
         }
     }
-    public isEmpty() : boolean {
+    /**
+     * Default check (text field, numeric field)
+     */
+    protected isEmpty() : boolean {
         return (this.input.value == "")
     }
 }
