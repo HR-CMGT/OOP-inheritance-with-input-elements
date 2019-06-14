@@ -7,4 +7,6 @@ A general class 'InputField' stores all the generic logic.
 The class 'CheckBox' overrides the isEmpty logic. This is because a 'TextField' and a 'Checkbox' have different ways of
 checking if the input element 'is empty'.
 
+[Live demo](https://hr-cmgt.github.io/OOP-inheritance-with-input-elements/)
+
 For a more advanced example please visit the following [link](https://hr-cmgt.github.io/OOP-inheritance-clientside-validation/)
